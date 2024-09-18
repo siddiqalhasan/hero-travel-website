@@ -17,6 +17,7 @@
 .text-dec{
     text-decoration: none;
 }
+
 .mt-40{margin-top: 40px;}
 .m-auto{margin: auto;}
 .pt-20{padding-top: 20px;}
@@ -31,23 +32,34 @@
 .color-2{
     color: #131318;
 }
-.w-40{width: 40%;}.w-80{width: 80%;}.w-70{width: 70%;}
+.w-40{width: 40%;}.w-80{width: 80%;}.w-70{width: 70%;}.w-50{width: 50%;}.w-60{width: 60%;}
 
 nav{
     display: flex;
     justify-content: space-between;
 }
 .nav-left{
-    position: relative;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
 .nav-logo{
-    position: absolute;
-}
-.nav-tittle{
-    position: absolute;
-    top: -10px;
-    left: 70px;
-    width: 150px;
+    width: 50px;
+    height: 50px; 
+    background-image: url(./Images/Group\ 40071\ \(2\).png);
+    background-size: contain;
+    background-position: center; 
+    background-repeat: no-repeat;
+    padding-right: 40px;
+    
+} 
+.nav-tittle h1{
+    font-weight: 800;
+    font-size: 30px;
+}  
+.nav-tittle span{
+    color: #FF5400 ;
+    
 }
 
 
@@ -58,15 +70,19 @@ nav{
 }
 .nav-menu ul li{
     display: inline-block;
-    margin: 10px 10px;
+    margin: 10px 25px;
+}
+.nav-menu ul li:nth-child(5){
+    margin-right: 0;
 }
 .nav-menu ul li a{
     text-decoration: none;
     color:#424247;
     font-size: 18px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: normal;
+    padd
 }
 
 
@@ -429,18 +445,106 @@ nav{
     padding-bottom: 20px;
 }
 
-.tour-btn{}
 .video-frame{
-    width:50%;
+    width:50%; 
     padding: 30px 0;
+    display: inline-block; 
+    
 }
 .video-frame iframe{
     border-radius: 20px;
 }
 
+                /* news-letter-section */
 
+.newsletter-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.letter-text{
+    width: 34%;
+    border: 1px solid #FF5400;
+    border-radius: 10px;
+    padding:50px 0px 50px 50px;
+}
+.news-btn{
+    margin-top: 40px;
+    width: 80%;
+    height: 60px;
+    padding-left: 15px;
+    line-height: 60px;
+}
+.letter-text p{
+    border-bottom: 2px solid #c3c3c344;
+    padding-bottom: 30px;
+}
+#input-name{
+    width: 80%;
+    height: 60px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: #dbdbdb48;
+    margin-top: 30px;
+    font-size: 1rem;
+    padding-left: 15px;
+    font-weight: 500;
+}
 
+.news-letter-img img{
+    width: 100%;
+}
+.video-content-section{
+    height: 500px;
+}
+.news-letter-img{
+    position: relative;
+}
+.sticker{
+    text-align: center;
+    background-color: #FF5400;
+    width: 40%;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 65px;
+    right: 20px;
+    transform: rotate(-19deg);
 
+}
+footer{
+    background-color: #f3f3f3;
+    padding: 100px 0;
+}
+.footer-text p{
+    width: 50%;
+    text-align: center ;
+    margin: auto;
+    color: #5A5A5D;
+    
+}
+.footer-icon{
+    text-align: center;
+}
+
+.footer-icon li a{
+    font-size: 25px; 
+    padding: 20px;
+    color:black ;
+}
+.footer-icon li{
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 30px ;
+}
+.footer-line{
+    width: 80%;
+    height: 2px;
+    margin: auto ;
+    background-color: #82828221;
+}
 
 
 
@@ -453,6 +557,10 @@ nav{
     nav{
         flex-direction: column;
         
+    }
+    .nav-menu ul li{
+        display: inline-block;
+        margin: 10px 10px;
     }
     .banner-section{
         text-align: center;
@@ -631,5 +739,35 @@ nav{
     .video-frame iframe{
         height: 300px;
     }
+    .newsletter-section{
+        flex-direction: column;
+    }
+    .letter-text{
+        width: 90%;
     
+    }
+    .news-letter-img{
+        width: 100%; 
+        margin-top: 20PX;
+    }
+    .video-section{
+        padding-bottom: 200px;
+    }
+    .sticker{
+        line-height: 10px;
+        text-align: center;
+        background-color: #FF5400;
+        width: 60%;
+        height: 25%;
+        border-radius: 10px;
+        color: white;       
+        position: absolute;
+        bottom: 65px;
+        right: 20px;
+        transform: rotate(-19deg);
+    }
+    .footer-text p{
+        width: 80% !important;
+        margin: auto;
+    }
 }
